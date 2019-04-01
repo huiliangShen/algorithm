@@ -1,0 +1,30 @@
+{
+  "name": "algorithm",
+  "version": "1.0.0",
+  "description": "study algorithm",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huiliangShen/algorithm.git"
+  },
+  "author": "banruo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/huiliangShen/algorithm/issues"
+  },
+  "homepage": "https://github.com/huiliangShen/algorithm#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.0"
+  }
+}
