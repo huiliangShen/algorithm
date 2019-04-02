@@ -16,9 +16,7 @@ export function selectSort(arr) {
                 minIndex = j;
             }
             if (minIndex !== i) {
-                let k = arr[minIndex];
-                arr[minIndex] = arr[i];
-                arr[i] = k;
+                swap(arr, minIndex, i);
             }
         }
     }

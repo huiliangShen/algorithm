@@ -1,5 +1,5 @@
-export function swap(min, max) {
-    let k = min;
-    min = max;
-    max = k;
+export function swap(arrs, left, right) {
+    let k = arrs[left];
+    arrs[left] = arrs[right];
+    arrs[right] = k;
 }
