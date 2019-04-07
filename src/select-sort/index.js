@@ -1,4 +1,4 @@
-import {swap} from '../lib/tool';
+import {swap, ge} from '../lib/tool';
 /**
  * 排序算法之选择排序
  * 原理：每次循环找到数组中最小值的下标，将所选到的最小值替换
@@ -15,13 +15,13 @@ export function selectSort(arr) {
             if (arr[minIndex] > arr[j]) {
                 minIndex = j;
             }
-            if (minIndex !== i) {
-                swap(arr, minIndex, i);
-            }
+        }
+        if (minIndex !== i) {
+            swap(arr, minIndex, i);
         }
     }
 }
 
-let arrs = [9,8,7,6,5,4,3,2,1];
+let arrs = generateRandomArray(20, 1, 20);
 selectSort(arrs);
 console.log(arrs);

@@ -27,15 +27,11 @@ function selectSort(arr) {
         minIndex = j;
       }
 
-      if (minIndex !== i) {
-        let k = arr[minIndex];
-        arr[minIndex] = arr[i];
-        arr[i] = k;
-      }
+      (0, _tool.swap)(arr, minIndex, i);
     }
   }
 }
 
-let arrs = [9, 8, 7, 6, 5, 4, 3, 2, 1];
+let arrs = (0, _tool.generateRandomArray)(20, 1, 20);
 selectSort(arrs);
 console.log(arrs);

@@ -9,15 +9,15 @@ function selectSort(arr) {
             if (arr[minIndex] > arr[j]) {
                 minIndex = j;
             }
-            if (minIndex !== i) {
-                let k = arr[minIndex];
-                arr[minIndex] = arr[i];
-                arr[i] = k;
-            }
+        }
+        if (minIndex !== i) {
+            let k = arr[minIndex];
+            arr[minIndex] = arr[i];
+            arr[i] = k;
         }
     }
 }
 
-let arrs = [9,8,7,6,5,4,3,2,1];
+let arrs = [2, 2, 2, 4, 8, 6, 8, 9, 10, 10, 2, 11, 11, 11, 16, 17, 7, 18, 19, 20 ];
 selectSort(arrs);
 console.log(arrs);
