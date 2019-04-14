@@ -26,3 +26,35 @@ export function generateRandomArray(n, minValue, maxValue) {
     }
     return result;
 }
+
+/**
+ * 测试数组性能
+ * @param {functionName} 排序算法名称
+ * @param {f} 排序算法的引用
+ * @param {array} 数组
+ * */
+export function testSort(functionName, f, array) {
+    let t1 = +new Date();
+    f(array);
+    let t2 = +new Date();
+    if (!isSorted(array)) {
+        console.log(`${functionName}: error`);
+        return;
+    }
+    let tempspan = (t2 - t1) / 1000;
+    console.log(`${functionName}: ${tempspan}s`);
+}
+
+function isSorted(arrs) {
+    for (let i = 0; i < arrs.length; i++) {
+        if (arrs[i] > arrs[i+1]){
+            return false;
+        }
+    }
+    return true;
+}
+
+// 简单实现拷贝功能
+export function copy(arrs) {
+    return JSON.parse(JSON.stringify(arrs));
+}
