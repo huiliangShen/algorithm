@@ -26,12 +26,13 @@ function selectSort(arr) {
       if (arr[minIndex] > arr[j]) {
         minIndex = j;
       }
+    }
 
+    if (minIndex !== i) {
       (0, _tool.swap)(arr, minIndex, i);
     }
   }
 }
 
-let arrs = (0, _tool.generateRandomArray)(20, 1, 20);
-selectSort(arrs);
-console.log(arrs);
+let arrs = (0, _tool.generateRandomArray)(10000, 1, 10000);
+(0, _tool.testSort)('selectSort', selectSort, arrs);
