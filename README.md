@@ -10,7 +10,7 @@
 **算法复杂度为O(n^2)**
 > 选择排序原理如下：遍历数组，设置最小值的索引为0，比较1..length-1为止的所有元素大小，若arr[min] > arr[索引值] 则设置最小值索引为当前索引值，直接遍历结束为止，若最小值索引改变，则交换对应值。
 
-![tool-editor](https://www.zybuluo.com/static/img/toolbar-editor.png)
+![tool-editor](./imgs/select-sort.gif)
 
 ## 插入排序
 **算法复杂度O(n^2)**
